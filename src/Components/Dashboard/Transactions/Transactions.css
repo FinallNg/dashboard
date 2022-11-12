@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100&display=swap");
+
+.transactions .transaction-table {
+  border: none;
+  box-shadow: none;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.transactions-container {
+  font-family: "Lato", sans-serif;
+  padding: 0 1em;
+}
+
+.transactions {
+  border: 0.911773px solid #e7e8f2;
+  box-shadow: 2px 2px 10px rgba(26, 51, 178, 0.25);
+  border-radius: 16px;
+  width: 90%;
+  height: 100%;
+  background-color: var(--white);
+  margin: 0 auto;
+  margin-block: 2em;
+  padding: 2em;
+}
+
+.transactions .tbhead,
+.transactions .tbdata:nth-child(1),
+.transactions .tbdata:nth-child(4) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.transactions .tbhead {
+  text-align: left;
+  color: #aeaeae;
+  padding-bottom: 2em;
+}
+
+.transactions .tbdata:nth-child(2) {
+  text-transform: capitalize;
+}
+
+.transactions .tbdata:nth-child(2),
+.transactions .tbdata:nth-child(3) {
+  color: #c7c7c7;
+}
+
+.transactions .tbdata:nth-child(1),
+.transactions.tbdata:nth-child(4) {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #404040;
+}
+
+.transactions .tbdata:nth-child(4),
+.transactions .tbhead:nth-child(4) {
+  text-align: right !important;
+}
+
+.transactions .tbhead:nth-child(2),
+.transactions .tbhead:nth-child(3) {
+  text-align: center !important;
+}
+
+.transactions .tbdata {
+  text-align: left;
+  padding: 0 2em;
+  padding-bottom: 1em;
+}
+
+.transactions h2 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.transactions .transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.transactions-btn-container button {
+  background-color: transparent;
+  padding: 0.5em;
+  color: var(--finall2);
+  border: 1px solid gray;
+  margin: 0 0.2em;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.transactions .transactions-btn-container button:nth-of-type(2) {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.transactions .table-responsive {
+  overflow-x: auto;
+}
+
+.transactions .tbdata:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transactions .tbdata:nth-child(1) span {
+  color: #404040;
+  background-color: #efefef;
+  width: 21px;
+  height: 21px;
+  padding: 5px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.transactions tbody {
+  position: relative;
+}
+
+.transactions tbody td:last-of-type {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+}
+
+.transactions tbody hr {
+  border: 0.5px solid rgba(236, 236, 236, 0.3);
+}
+
+@media screen and (max-width: 640px) {
+  .transactions {
+    width: 100%;
+  }
+
+  .transactions tbody td:last-of-type {
+    margin-top: 20px;
+  }
+}
